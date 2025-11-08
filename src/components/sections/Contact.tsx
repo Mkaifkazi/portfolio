@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapLocationDot, FaLinkedin, FaGithub, FaInstagram, FaXTwitter } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import { PERSONAL_INFO } from '../../utils/constants';
 
@@ -20,7 +20,7 @@ export const Contact: React.FC = () => {
       gradient: 'from-green-500 to-emerald-500',
     },
     {
-      icon: <FaMapMarkerAlt className="text-3xl" />,
+      icon: <FaMapLocationDot className="text-3xl" />,
       title: 'Location',
       value: PERSONAL_INFO.location,
       gradient: 'from-purple-500 to-pink-500',
@@ -52,9 +52,9 @@ export const Contact: React.FC = () => {
     {
       name: 'X (Twitter)',
       url: PERSONAL_INFO.twitter,
-      icon: <FaTwitter className="text-3xl" />,
-      gradient: 'from-sky-500 to-blue-600',
-      hoverColor: 'hover:from-sky-600 hover:to-blue-700',
+      icon: <FaXTwitter className="text-3xl" />,
+      gradient: 'from-gray-800 to-black',
+      hoverColor: 'hover:from-gray-900 hover:to-black',
     },
     {
       name: 'Email',

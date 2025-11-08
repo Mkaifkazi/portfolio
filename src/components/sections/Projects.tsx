@@ -2,6 +2,7 @@ import React from 'react';
 import { FaExternalLinkAlt, FaStar } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { Card } from '../ui/Card';
+import { Tooltip } from '../ui/Tooltip';
 import { projects } from '../../data/projects';
 
 export const Projects: React.FC = () => {
@@ -80,9 +81,24 @@ export const Projects: React.FC = () => {
                       </span>
                     ))}
                     {project.technologies.length > 4 && (
-                      <span className="px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-400 rounded text-xs">
-                        +{project.technologies.length - 4}
-                      </span>
+                      <Tooltip
+                        content={
+                          <div className="flex flex-wrap gap-1.5">
+                            {project.technologies.slice(4).map((tech, idx) => (
+                              <span
+                                key={idx}
+                                className="px-2 py-1 bg-primary-100 dark:bg-gray-600 text-primary-700 dark:text-white rounded text-xs"
+                              >
+                                {tech}
+                              </span>
+                            ))}
+                          </div>
+                        }
+                      >
+                        <span className="px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-400 rounded text-xs cursor-help">
+                          +{project.technologies.length - 4}
+                        </span>
+                      </Tooltip>
                     )}
                   </div>
                 </div>
