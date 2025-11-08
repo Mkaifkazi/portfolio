@@ -8,7 +8,7 @@ export const PERSONAL_INFO = {
   github: 'https://github.com/Mkaifkazi',
   instagram: 'https://www.instagram.com/m.kaif.kazi_/',
   twitter: 'https://x.com/KaifKazi10',
-  resumeUrl: '/MohammadKaifKazi_FrontendDeveloper_Resume.pdf',
+  resumeUrl: '/Mohammadkaif_kazi_resume.pdf',
 };
 
 export const NAVIGATION_LINKS = [
