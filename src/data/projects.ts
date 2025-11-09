@@ -25,6 +25,23 @@ export const projects: Project[] = [
   },
   {
     id: "project-2",
+    title: "NaazWare Labs",
+    description: "Software Development and Consulting Services",
+    longDescription:
+      "Official website for NaazWare Labs featuring software development and consulting services.",
+    image: "/projects/naazware-labs.jpg",
+    technologies: [
+      "Next.js 14",
+      "React.js",
+      "TypeScript",
+      "Bootstrap 5",
+    ],
+    category: "enterprise",
+    featured: true,
+    liveUrl: "https://naazwarelabs.vercel.app/",
+  },
+  {
+    id: "project-3",
     title: "Flowdeck",
     description:
       "Productivity dashboard for managing tasks and workflows efficiently",
@@ -53,7 +70,7 @@ export const projects: Project[] = [
     liveUrl: "https://flowdeck-pi.vercel.app/dashboard",
   },
   {
-    id: "project-3",
+    id: "project-4",
     title: "FormMorf Library",
     description:
       "Dynamic form builder library with drag-and-drop functionality",
@@ -78,7 +95,7 @@ export const projects: Project[] = [
     liveUrl: "https://www.npmjs.com/package/@formmorf/builder",
   },
   {
-    id: "project-4",
+    id: "project-5",
     title: "Luxe Store",
     description:
       "Modern e-commerce platform with product catalog and shopping cart",
@@ -101,7 +118,7 @@ export const projects: Project[] = [
     liveUrl: "https://ecommerce-site-flax-rho.vercel.app/",
   },
   {
-    id: "project-5",
+    id: "project-6",
     title: "Portfolio Website",
     description:
       "Personal portfolio showcasing projects and professional experience",
@@ -125,7 +142,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: "project-6",
+    id: "project-7",
     title: "Travel Site",
     description:
       "Modern travel booking platform with responsive design and smooth animations",
